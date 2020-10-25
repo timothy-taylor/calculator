@@ -1,0 +1,44 @@
+html, body {
+    margin: auto auto;
+    padding: 0;
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    font-family: arial, sans-serif;
+}
+
+.display {
+    height: 1.25em;
+    margin: 15px auto;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid grey;
+    border-radius: 42px;
+    background-color: lightgrey;
+    text-align: right;
+    font-family: monospace;
+    font-size: 1.25em;
+}
+
+.buttons {
+    display: grid;
+    grid: repeat(4, 84px) / repeat(4, 84px);
+}
+
+button {
+    border-radius: 50%;
+    border: 1px solid lightgrey;
+    font-size: 1.75em;
+    color: grey;
+}
+
+button:focus {
+    outline: 0;
+}
+
+button:hover {
+    border: 3px outset lightgrey;
+}
+
+#equals {
+    background-color: yellow;
+}
