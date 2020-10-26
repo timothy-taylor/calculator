@@ -18,15 +18,14 @@ Correct mathematical answers through mathematical functions with interactive web
 5. make it work: store first number pressed, operator chosen, second number pressed
 6. operate() when = is pressed, update display with 'solution'
 
-Sun Oct 25 07:35:20 EDT 2020 : General functions are working. The plan now is to break apart the DOM functions from the logical functions to make it easier to add keyboard support.
 
 ##### // watch out for:
 * ~~should be able to string together several operators ( 12 + 7 - 5 * 3 ) = 42~~
-* round long decimals
-* pressing = before all things are entered could be an issue
+* ~~round long decimals~~
+* ~~pressing = before all things are entered could be an issue~~
 * ~~pressing clear should wipe existing stored data~~
 * don't let dividing by 0 crash, display a message
-* extra credit : add a . button and let users use decimals don't let them use more than 1
+* ~~extra credit : add a . button and let users use decimals don't let them use more than 1~~
 * extra credit : add a backspace button
 * extra credit : add keyboard support
 

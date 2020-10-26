@@ -1,8 +1,8 @@
 html, body {
     margin: auto auto;
-    padding: 0;
-    height: 100%;
-    min-height: 100%;
+    padding: 42px;
+    border: 1px solid grey;
+    border-radius: 42px;
     display: flex;
     font-family: arial, sans-serif;
 }
@@ -21,10 +21,11 @@ html, body {
 
 .buttons {
     display: grid;
-    grid: repeat(4, 84px) / repeat(4, 84px);
+    grid: repeat(5, 84px) / repeat(4, 84px);
 }
 
 button {
+    background-color: #EFEFEF;
     border-radius: 50%;
     border: 1px solid lightgrey;
     font-size: 1.75em;
@@ -41,4 +42,10 @@ button:hover {
 
 #equals {
     background-color: yellow;
+}
+
+#stateIcon {
+    background-color: #EFEFEF;
+    transition-property: background-color;
+    transition-duration: 333ms;
 }
