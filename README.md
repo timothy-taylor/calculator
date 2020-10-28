@@ -1,5 +1,7 @@
 #### The Odin Project Assignment : Make a calculator
 
+Access a live version [here](http://bvwtgt.xyz/calculator/)
+
 # Plan
 
 ### What does the interface of the project look like? Where does the input come from?
