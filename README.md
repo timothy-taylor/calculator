@@ -1,6 +1,6 @@
 #### The Odin Project Assignment : Make a calculator
 
-Access a live version [here](http://bvwtgt.xyz/calculator/)
+Access a live version [here](https://bvwtgt.xyz/calculator/)
 
 # Plan
 
