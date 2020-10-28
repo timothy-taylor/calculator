@@ -27,6 +27,6 @@ Correct mathematical answers through mathematical functions with interactive web
 * don't let dividing by 0 crash, display a message
 * ~~extra credit : add a . button and let users use decimals don't let them use more than 1~~
 * extra credit : add a backspace button
-* extra credit : add keyboard support
+* ~~extra credit : add keyboard support~~
 
 

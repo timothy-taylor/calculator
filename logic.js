@@ -94,6 +94,7 @@ const nonNumberParser = (elementId) => {
     } else if (elementId === 'clear') {
         init();
         updateDisplay(activeResult);
+        colorChooser('clear');
     } else if (elementId === 'random') {
         const randomNumber = Math.random() * 1000;
         workingNumber = randomNumber.toFixed(2);
@@ -112,4 +113,32 @@ const nonNumberParser = (elementId) => {
         updateDisplay(activeResult);
         operateWithoutEvaluate = false;
     }
+}
+
+const keyPressParser = (keyValue) => {
+  const index = keyValue;
+  const library = [ {key:'a', value:10}, {key:'b', value:11}, 
+    {key:'c', value:12}, {key:'d', value:13}, {key:'e', value:14}, 
+    {key:'f', value:15}, {key:'g', value:16}, {key:'h', value:17}, 
+    {key:'i', value:18}, {key:'j', value:19}, {key:'k', value:20}, 
+    {key:'l', value:21}, {key:'m', value:22}, {key:'n', value:23}, 
+    {key:'o', value:24}, {key:'p', value:25}, {key:'q', value:26}, 
+    {key:'r', value:27}, {key:'s', value:28}, {key:'t', value:29}, 
+    {key:'u', value:30}, {key:'v', value:31}, {key:'w', value:32}, 
+    {key:'x', value:33}, {key:'y', value:34}, {key:'z', value:35},
+    {key:',', value:'clear'}, {key:'Enter', value:'equals'},
+    {key:'=', value:'add'}, {key:'-', value:'subtract'},
+    {key:'/', value:'divide'}, {key:'*', value:'multiply'},
+    {key:'`', value:'random'}, {key:'.', value:'decimal'} ];
+  const foundChar = library.find(element => element.key == index );
+  const foundNum = Number(index);
+  if(foundChar) {
+    if( typeof(foundChar.value) === 'string' ) {
+      nonNumberParser(foundChar.value);
+    } else {
+      numberPressed(foundChar.value);
+    }
+  } else {
+    numberPressed(foundNum);
+  } 
 }
