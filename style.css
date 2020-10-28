@@ -1,10 +1,13 @@
-html, body {
-    margin: auto auto;
+main {
+  margin: auto auto;
+  display: flex;
+}
+
+#calculator {
+    margin-left: 25%;
     padding: 42px;
     border: 1px solid grey;
     border-radius: 42px;
-    display: flex;
-    font-family: arial, sans-serif;
 }
 
 .display {
@@ -17,6 +20,13 @@ html, body {
     text-align: right;
     font-family: monospace;
     font-size: 1.25em;
+}
+
+footer {
+  padding: 15px 15px;
+  max-width: 25%;
+  font-style: italic;
+  text-align: justify;
 }
 
 .buttons {
